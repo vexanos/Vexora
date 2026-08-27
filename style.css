@@ -14,8 +14,8 @@ body {
     display: flex;
     flex-direction: column;
 
-    background: #08070b;
-    color: white;
+    background: #000000;
+    color: #ffffff;
 
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -26,6 +26,7 @@ body {
 ========================= */
 
 .header {
+    width: 100%;
     height: 56px;
 
     display: flex;
@@ -33,11 +34,10 @@ body {
 
     padding: 0 20px;
 
-    background: #0b090f;
+    background: #000000;
 
-    border-bottom: 1px solid #211a29;
+    border-bottom: 1px solid #202020;
 }
-
 
 .logo {
     display: flex;
@@ -54,6 +54,10 @@ body {
 }
 
 
+/* =========================
+   NAV
+========================= */
+
 .nav {
     display: flex;
 
@@ -62,47 +66,48 @@ body {
     margin-left: 14px;
 }
 
-
 .nav-button {
-    width: 30px;
-    height: 30px;
+    width: 31px;
+    height: 31px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background: #130e1a;
+    background: #0d0d0d;
 
-    border: 1px solid #2a1d35;
+    border: 1px solid #252525;
 
     border-radius: 6px;
 
     text-decoration: none;
-}
 
+    transition: 0.2s;
+}
 
 .nav-button svg {
     width: 15px;
     height: 15px;
 
-    fill: #8e8299;
+    fill: #999999;
 }
 
+.nav-button:hover {
+    background: #181818;
+    border-color: #444444;
+}
 
 .nav-button:hover svg {
-    fill: white;
+    fill: #ffffff;
 }
-
 
 .nav-button.active {
-    background: #28113e;
-
-    border-color: #7133b5;
+    background: #181818;
+    border-color: #ffffff;
 }
 
-
 .nav-button.active svg {
-    fill: #a855f7;
+    fill: #ffffff;
 }
 
 
@@ -116,11 +121,9 @@ body {
     width: 100%;
 }
 
-
 .games-section {
     padding: 25px 20px 50px;
 }
-
 
 .games-section h2 {
     margin-bottom: 14px;
@@ -129,12 +132,12 @@ body {
 
     font-weight: 500;
 
-    color: #aaa1b0;
+    color: #bdbdbd;
 }
 
 
 /* =========================
-   GAMES GRID
+   GAMES
 ========================= */
 
 .games-grid {
@@ -145,30 +148,27 @@ body {
     gap: 12px;
 }
 
-
 .game-card {
     min-width: 0;
 
     overflow: hidden;
 
-    background: #100b15;
+    background: #0b0b0b;
 
-    border: 1px solid #24192d;
+    border: 1px solid #252525;
 
     border-radius: 7px;
 
-    transition:
-        transform 0.18s ease,
-        border-color 0.18s ease;
+    transition: 0.2s;
 }
-
 
 .game-card:hover {
     transform: translateY(-2px);
 
-    border-color: #51316a;
-}
+    background: #111111;
 
+    border-color: #555555;
+}
 
 .game-image {
     width: 100%;
@@ -179,23 +179,16 @@ body {
     align-items: center;
     justify-content: center;
 
-    background:
-        linear-gradient(
-            135deg,
-            #24152f,
-            #130e19
-        );
+    background: #151515;
 
-    color: #766b7e;
+    color: #777777;
 
     font-size: 11px;
 }
 
-
 .game-info {
     padding: 10px 9px 9px;
 }
-
 
 .game-info h3 {
     overflow: hidden;
@@ -207,9 +200,8 @@ body {
 
     font-weight: 500;
 
-    color: #eee;
+    color: #ffffff;
 }
-
 
 .game-info small {
     display: block;
@@ -218,7 +210,7 @@ body {
 
     font-size: 8px;
 
-    color: #756b7c;
+    color: #777777;
 }
 
 
@@ -235,23 +227,21 @@ body {
 
     text-align: center;
 
-    background: #0c0a10;
+    background: #050505;
 
-    border-top: 1px solid #21182d;
+    border-top: 1px solid #202020;
 }
-
 
 .social-links {
     display: flex;
 
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     gap: 18px;
 
     margin-bottom: 16px;
 }
-
 
 .social-links a {
     width: 24px;
@@ -262,47 +252,47 @@ body {
     justify-content: center;
 }
 
-
 .social-links svg {
     width: 19px;
     height: 19px;
 
-    fill: #817887;
+    fill: #888888;
 
-    transition: fill 0.2s ease;
+    transition: 0.2s;
 }
-
 
 .social-links a:hover svg {
-    fill: white;
+    fill: #ffffff;
 }
 
+
+/* =========================
+   FOOTER TEXT
+========================= */
 
 .footer-legal {
     display: flex;
 
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     flex-wrap: wrap;
 
     gap: 7px;
 
-    color: #625a68;
+    color: #666666;
 
     font-size: 10px;
 }
 
-
 .footer-legal a {
-    color: #817887;
+    color: #888888;
 
     text-decoration: none;
 }
 
-
 .footer-legal a:hover {
-    color: white;
+    color: #ffffff;
 }
 
 
@@ -331,27 +321,22 @@ body {
         padding: 0 12px;
     }
 
-
     .logo img {
         width: 70px;
     }
 
-
     .nav {
         margin-left: 10px;
     }
-
 
     .nav-button {
         width: 28px;
         height: 28px;
     }
 
-
     .games-section {
         padding: 22px 12px 35px;
     }
-
 
     .games-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -359,21 +344,17 @@ body {
         gap: 9px;
     }
 
-
     .game-info {
         padding: 8px;
     }
-
 
     .game-info h3 {
         font-size: 10px;
     }
 
-
     .game-info small {
         font-size: 7px;
     }
-
 
     .footer {
         padding: 23px 12px;
